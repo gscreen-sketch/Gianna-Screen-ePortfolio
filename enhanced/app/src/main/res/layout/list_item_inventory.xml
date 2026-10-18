@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- CS499 Capstone enhancement: RecyclerView-based inventory list  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/row_background">
+
+<!--    Item Name-->
+    <TextView
+        android:id="@+id/rowItemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_dark"
+        android:textSize="16sp" />
+
+<!--    CS499 Capstone enhancement: Quantity stepper and explicit save-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+<!--        Decrease Button-->
+        <Button
+            android:id="@+id/rowDecrementButton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:padding="0dp"
+            android:text="-"
+            android:textColor="@color/text_dark"
+            android:backgroundTint="@color/brand_yellow" />
+
+<!--        Item Quantity-->
+        <EditText
+            android:id="@+id/rowItemQty"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textColor="@color/text_dark"
+            android:gravity="center"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp" />
+
+<!--        Increase Button-->
+        <Button
+            android:id="@+id/rowIncrementButton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:padding="0dp"
+            android:text="+"
+            android:textColor="@color/text_dark"
+            android:backgroundTint="@color/brand_yellow" />
+
+<!--        Save Button-->
+        <Button
+            android:id="@+id/rowSaveButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textColor="@color/text_dark"
+            android:backgroundTint="@color/brand_yellow"
+            android:layout_marginStart="8dp" />
+
+<!--        Delete Button-->
+        <Button
+            android:id="@+id/rowDeleteButton"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:padding="0dp"
+            android:text="Del"
+            android:textColor="@color/text_light"
+            android:backgroundTint="@color/brand_black"
+            android:layout_marginStart="6dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

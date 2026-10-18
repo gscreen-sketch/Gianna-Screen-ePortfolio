@@ -1,0 +1,13 @@
+{
+  "name": "project1-inventory-api",
+  "version": "1.0.0",
+  "description": "REST API between the Project1 Android app and MySQL",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.9.7"
+  }
+}
